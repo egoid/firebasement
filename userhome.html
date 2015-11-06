@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Logic</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="usercell.css">
+
+</head>
+<body>
+<div class='container'>
+
+  <div class='userCell'>
+    <h1>User</h1>
+      <div class='userPicture'> </div> 
+      <div class="btn-group-vertical" role="group" aria-label="..."><ul>View Profile </ul> 
+      </div>
+      <div class="btn-group-vertical" role="group" aria-label="..."><ul> Edit Profile </ul> 
+      </div>
+      <div id='clickMessages' class="btn-group-vertical" role="group" aria-label="..."><ul id='clickM'> Messages 
+          <li id='messageL'> Inbox </li>
+          <li id='messageL'> Sent </li>
+          <li id='messageL'> Deleted Messages </li>
+        </ul> 
+      </div>
+      <div id='clickSounds' class="btn-group-vertical" role="group" aria-label="..."><ul id='clickS'> My Sounds 
+          <li id='soundL'> Upload </li>
+          <li id='soundL'> Published Songs  </li>
+          <li id='soundL'> Work In Progress'  </li>
+          <li id='soundL'> Instrumentals  </li>
+          <li id='soundL'>  Stems  </li>
+          <li id='soundL'>  Remixes  </li>
+          <li id='soundL'>  Samples </li>
+        </ul> 
+      </div>
+      <div class="btn-group-vertical" role="group" aria-label="..."><ul> Logout </ul> 
+      </div>  
+  </div>
+  
+  <div class='bottomTools'>
+
+    <div class="btn-group" role="group" aria-label="...">
+      <button id='botomButton' type="button" class="btn btn-default"> Instrumentals </button>
+      <button id='botomButton' type="button" class="btn btn-default"> Stems </button>
+       <button id='botomButton' type="button" class="btn btn-default"> Remixes </button>
+        <button id='botomButton' type="button" class="btn btn-default"> Samples </button> 
+        <button id='botomButton' type="button" class="btn btn-default"> Explore </button> 
+    </div>
+  </div>
+
+  <div class='uploadForm'>
+
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">File Name</label>
+          <input type="email" class="form-control" id="inputFileName" placeholder="Upload...">
+        </div>
+        <div class="form-group">
+          <label for="inputFile">File input</label>
+          <input type="file" id="inputFile" name='src'>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button id='uploadFile' name='uploadFile' type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+  </div>
+
+
+
+</div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+  <script src="homescript.js"></script>
+</body>
+</html>

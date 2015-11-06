@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Logic</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class='container'>
+
+
+<div class='login'>
+  <h1> Login </h1>
+  <div class="input-group">
+    <span class="input-group-addon" id="User">Email</span>
+    <input type="text" id='emailLogin' class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="Password">Password</span>
+    <input type="password" id='passwordLogin' class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group">
+    <button id='loginB'> Login </button>
+  </div>
+</div>
+
+
+<div class='newUser'>
+  <h1> New User </h1>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="User">Email</span>
+    <input id='newEmail' type="text" id='userLogin' class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group">
+    <span class="input-group-addon" id="Password">Password</span>
+    <input id='newPassword' type="password" id='userLogin' class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="input-group">
+    <button id='clickCreate'> Create User </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
